@@ -18,74 +18,17 @@ class MyApp extends StatelessWidget {
           padding: EdgeInsets.all(20),
           width: double.infinity,
           height: 300,
-          child: ListView(children: [
-            Container(
-              margin: EdgeInsets.only(bottom: 10),
-              color: Colors.blue,
-              child: Text("Anton"),
-              padding: EdgeInsets.all(20),
-            ),
-            Container(
-              margin: EdgeInsets.only(bottom: 10),
-              color: Colors.blue,
-              child: Text("Anton"),
-              padding: EdgeInsets.all(20),
-            ),
-            Container(
-              margin: EdgeInsets.only(bottom: 10),
-              color: Colors.blue,
-              child: Text("Anton"),
-              padding: EdgeInsets.all(20),
-            ),
-            Container(
-              margin: EdgeInsets.only(bottom: 10),
-              color: Colors.blue,
-              child: Text("Anton"),
-              padding: EdgeInsets.all(20),
-            ),
-            Container(
-              margin: EdgeInsets.only(bottom: 10),
-              color: Colors.blue,
-              child: Text("Anton"),
-              padding: EdgeInsets.all(20),
-            ),
-            Container(
-              margin: EdgeInsets.only(bottom: 10),
-              color: Colors.blue,
-              child: Text("Anton"),
-              padding: EdgeInsets.all(20),
-            ),
-            Container(
-              margin: EdgeInsets.only(bottom: 10),
-              color: Colors.blue,
-              child: Text("Anton"),
-              padding: EdgeInsets.all(20),
-            ),
-            Container(
-              margin: EdgeInsets.only(bottom: 10),
-              color: Colors.blue,
-              child: Text("Anton"),
-              padding: EdgeInsets.all(20),
-            ),
-            Container(
-              margin: EdgeInsets.only(bottom: 10),
-              color: Colors.blue,
-              child: Text("Anton"),
-              padding: EdgeInsets.all(20),
-            ),
-            Container(
-              margin: EdgeInsets.only(bottom: 10),
-              color: Colors.blue,
-              child: Text("Anton"),
-              padding: EdgeInsets.all(20),
-            ),
-            Container(
-              margin: EdgeInsets.only(bottom: 10),
-              color: Colors.blue,
-              child: Text("Anton"),
-              padding: EdgeInsets.all(20),
-            ),
-          ]),
+          child: ListView.builder(
+            itemCount: 100,
+            itemBuilder: (context, i) {
+              return Container(
+                margin: EdgeInsets.only(bottom: 10),
+                color: Colors.blue,
+                child: Text("Anton"),
+                padding: EdgeInsets.all(20),
+              );
+            },
+          ),
         ),
       ),
     );
